@@ -1,0 +1,59 @@
+@import './buttons.css';
+@import './progressstyle.css';
+body{
+    background-color: #43DDE6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    inset:0;
+    display: flex;
+    align-items: center;
+    
+}
+.wrapper{
+    max-inline-size: 900px;
+    margin: auto;
+}
+.player{
+    position: relative;
+}
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 1624 / 942;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.player-title{
+    color: white;
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-start: 20px;
+    font-weight: 300;
+}
+.player-actions{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.player-progress{
+    position: absolute;
+    inset-block-end: 10px;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+.player-progress input{
+    flex: 1;
+}
+.player-overlay{
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    transition: .9s opacity;
+}
+.player-overlay:hover {
+    opacity: 1;
+}
+
